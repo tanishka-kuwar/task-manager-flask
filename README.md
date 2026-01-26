@@ -48,10 +48,3 @@ python app.py
 
 👤 Author
 Tanishka Kuwar
-
-
-Commit it:
-```bash
-git add README.md
-git commit -m "Add README"
-git push
