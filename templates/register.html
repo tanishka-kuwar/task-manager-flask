@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}Register | Task Manager{% endblock %}
+
+{% block content %}
+        <h2>Register</h2>
+
+          <!-- updating for register- FLASH MESSAGE
+        {%with messages = get_flashed_messages()%}
+           {% if messages %}
+               {% for message in messages %}
+                    <div class="alert alert-info">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %} -->
+
+
+        <form method="POST">
+            <div class="mb-3">
+                <input type="email"  class="form-control" name="email" placeholder="Email" required>
+            </div>
+            
+            <div class="mb-3">
+                <input type="password"  class="form-control" name="password" placeholder="Password" required>
+            </div>
+            
+            <div class="mb-3">
+                <input type="password"  class="form-control" name="confirm" placeholder="Confirm Password" required>
+            </div>
+
+            <button  class="btn btn-primary w-100" type="submit">  Register</button>
+        </form>
+
+        <div class="link">
+            <p>Already have an account? 
+                <a href="{{ url_for('login') }}">Login</a>
+            </p>
+        </div>
+{% endblock %}
