@@ -31,6 +31,7 @@ task-manager-flask/
 │ └── css/
 ├── requirements.txt
 └── README.md
+├── schema.sql    
 
 
 ## ⚙️ Setup Instructions
